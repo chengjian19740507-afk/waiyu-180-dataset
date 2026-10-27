@@ -1,0 +1,39 @@
+{
+  "name": "waiyu-180",
+  "version": "2.0.0",
+  "description": "出境无忧180句 · 13 语种 2340 句 + 7 语种 7000 词的中文对照外语短句数据集（附离线发音 URL）",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": { "types": "./index.d.ts", "require": "./index.js", "default": "./index.js" },
+    "./data/sentences/*": "./data/sentences/*",
+    "./data/vocab/*": "./data/vocab/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "data/sentences/*.json",
+    "data/vocab/*.json",
+    "data/sentences.jsonl",
+    "data/vocab.jsonl",
+    "dataset_info.json",
+    "LICENSE",
+    "LICENSE-DATA",
+    "README.md"
+  ],
+  "keywords": [
+    "chinese", "travel", "language-learning", "phrasebook", "vocabulary",
+    "offline", "tts", "i18n", "ielts", "dataset", "multilingual"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "author": "成键 / Cheng Jian (北极虎)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chengjian19740507-afk/waiyu-180-dataset.git"
+  },
+  "homepage": "https://github.com/chengjian19740507-afk/waiyu-180-dataset",
+  "bugs": { "url": "https://github.com/chengjian197405-afk/waiyu-180-dataset/issues" },
+  "publishConfig": { "access": "public" },
+  "engines": { "node": ">=16" }
+}

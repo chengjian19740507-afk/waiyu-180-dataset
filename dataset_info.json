@@ -1,0 +1,238 @@
+{
+  "name": "waiyu-180",
+  "version": "2.0.0",
+  "license": "CC-BY-NC-4.0",
+  "audio_base": "https://chengjian19740507-afk.github.io/waiyu-180-audio",
+  "sentences": {
+    "total": 2340,
+    "langs": [
+      "ar",
+      "de",
+      "en",
+      "es",
+      "fr",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "pt",
+      "ru",
+      "th",
+      "vi"
+    ],
+    "per_lang": 180,
+    "categories": [
+      "airport",
+      "common",
+      "directions",
+      "family",
+      "food",
+      "frontdesk",
+      "greetings",
+      "hotel",
+      "intro",
+      "medical",
+      "numbers",
+      "restaurant",
+      "shopping",
+      "social",
+      "time",
+      "transport",
+      "travel",
+      "visa",
+      "work"
+    ],
+    "category_count": 19
+  },
+  "vocabulary": {
+    "total": 7000,
+    "langs": [
+      "ar",
+      "en",
+      "es",
+      "fr",
+      "ja",
+      "ko",
+      "ru"
+    ],
+    "per_lang": 1000
+  },
+  "files": {
+    "data/sentences/ar.parquet": {
+      "bytes": 17108,
+      "md5": "bc945b7620db191fb23be214347ec405"
+    },
+    "data/sentences/de.parquet": {
+      "bytes": 16067,
+      "md5": "c72653e66877eaa5c61ea00c6bb29f84"
+    },
+    "data/sentences/en.parquet": {
+      "bytes": 15825,
+      "md5": "e6b2083cde6f3d18ab8bb6f1bc4dfd37"
+    },
+    "data/sentences/es.parquet": {
+      "bytes": 16285,
+      "md5": "ac91f6aa5cc5fd13ad53296d2a1f28b7"
+    },
+    "data/sentences/fr.parquet": {
+      "bytes": 16463,
+      "md5": "1490e96a116241e0eac8b6fc44031c32"
+    },
+    "data/sentences/hi.parquet": {
+      "bytes": 16792,
+      "md5": "d585b700cb913dcd34ed969bfe0e3070"
+    },
+    "data/sentences/it.parquet": {
+      "bytes": 15929,
+      "md5": "3ae5378bc780b5a55bcbb195701d5530"
+    },
+    "data/sentences/ja.parquet": {
+      "bytes": 16084,
+      "md5": "48bd04623d2d7e17d1bd86722ae78d1a"
+    },
+    "data/sentences/ko.parquet": {
+      "bytes": 16019,
+      "md5": "b0da9660f75068ee1f3a4fcb1a0994d6"
+    },
+    "data/sentences/pt.parquet": {
+      "bytes": 15889,
+      "md5": "cf4725d1f5b44d1724970bbb0c4e8690"
+    },
+    "data/sentences/ru.parquet": {
+      "bytes": 16578,
+      "md5": "924ba8109fb3bed2b0393d87ec8d817b"
+    },
+    "data/sentences/sentences-ar.json": {
+      "bytes": 37195,
+      "md5": "4b37293bf971b3ec3ef7671e25527557"
+    },
+    "data/sentences/sentences-de.json": {
+      "bytes": 35098,
+      "md5": "975e01f9b321f7d3c9997854156f27b0"
+    },
+    "data/sentences/sentences-en.json": {
+      "bytes": 34407,
+      "md5": "3f11587fbb3472fd7b6b3527172311f0"
+    },
+    "data/sentences/sentences-es.json": {
+      "bytes": 34752,
+      "md5": "d6728337d80dc220e51bd348c8416fc9"
+    },
+    "data/sentences/sentences-fr.json": {
+      "bytes": 35293,
+      "md5": "ed55eccf39100dbdafc4c6f40e554925"
+    },
+    "data/sentences/sentences-hi.json": {
+      "bytes": 39023,
+      "md5": "e3518611553e6059bb7e513c9cc1e0f9"
+    },
+    "data/sentences/sentences-it.json": {
+      "bytes": 34476,
+      "md5": "804f61444b0990d2139a6826a6db3e21"
+    },
+    "data/sentences/sentences-ja.json": {
+      "bytes": 35952,
+      "md5": "17e18303b3162d6a5202451c7a1058ff"
+    },
+    "data/sentences/sentences-ko.json": {
+      "bytes": 35032,
+      "md5": "84677aa5e1ecc96370347bf1ce9981c0"
+    },
+    "data/sentences/sentences-pt.json": {
+      "bytes": 34460,
+      "md5": "714c2c38cff67b1b98976014d1208b5c"
+    },
+    "data/sentences/sentences-ru.json": {
+      "bytes": 36144,
+      "md5": "6438eeac64d71458e11793d95f810197"
+    },
+    "data/sentences/sentences-th.json": {
+      "bytes": 39772,
+      "md5": "99be2ed6027be7cf0a0f900b3af25978"
+    },
+    "data/sentences/sentences-vi.json": {
+      "bytes": 35252,
+      "md5": "b35e4fc83ce8f684a71e13a4e53725e9"
+    },
+    "data/sentences/th.parquet": {
+      "bytes": 16382,
+      "md5": "c54e6cd7df88a0493401d1c3248527e3"
+    },
+    "data/sentences/vi.parquet": {
+      "bytes": 15791,
+      "md5": "f911868b5bdf50e84073f84d67360b8a"
+    },
+    "data/sentences.jsonl": {
+      "bytes": 633911,
+      "md5": "b799b8c4b58640206ade31acbe3055ff"
+    },
+    "data/sentences.parquet": {
+      "bytes": 108093,
+      "md5": "cda27ff996ac78367e20304cafaec317"
+    },
+    "data/vocab/ar.parquet": {
+      "bytes": 44159,
+      "md5": "cd792c7b909d38c7a5276404975d13c3"
+    },
+    "data/vocab/en.parquet": {
+      "bytes": 111584,
+      "md5": "292ec37a05c5082f9ba0474e08522f98"
+    },
+    "data/vocab/es.parquet": {
+      "bytes": 35414,
+      "md5": "2754fe75a5a5e473419c27e91197a7d4"
+    },
+    "data/vocab/fr.parquet": {
+      "bytes": 34498,
+      "md5": "49e3f1557108604c7378816611e33766"
+    },
+    "data/vocab/ja.parquet": {
+      "bytes": 34407,
+      "md5": "2c87536c8889f0719e4e09420de35b73"
+    },
+    "data/vocab/ko.parquet": {
+      "bytes": 34329,
+      "md5": "35fe6cf8e9fb15a7c7871d73426798da"
+    },
+    "data/vocab/ru.parquet": {
+      "bytes": 36430,
+      "md5": "2767d6f73f45b8526d8bb0e87d48ea17"
+    },
+    "data/vocab/vocabulary-ar.json": {
+      "bytes": 105804,
+      "md5": "f5168405377cd26658cc6a5647a9559d"
+    },
+    "data/vocab/vocabulary-en.json": {
+      "bytes": 205559,
+      "md5": "49753c8063e62a0531a086bff28b03c4"
+    },
+    "data/vocab/vocabulary-es.json": {
+      "bytes": 91114,
+      "md5": "e2b20584ed24fb5d9336e99234591eed"
+    },
+    "data/vocab/vocabulary-fr.json": {
+      "bytes": 90109,
+      "md5": "2c04f3f64bf1151fd62ca9b4f3c5aa5b"
+    },
+    "data/vocab/vocabulary-ja.json": {
+      "bytes": 90969,
+      "md5": "eed52229eacca8e1a2197c356133838f"
+    },
+    "data/vocab/vocabulary-ko.json": {
+      "bytes": 90607,
+      "md5": "3ee726549fa02c65bc601f3949d2515d"
+    },
+    "data/vocab/vocabulary-ru.json": {
+      "bytes": 96463,
+      "md5": "933a02d2af5d438b41cde8e300839839"
+    },
+    "data/vocab.jsonl": {
+      "bytes": 1616861,
+      "md5": "2d00d5bf91ca88e4d09e5d3bd2e7b7be"
+    },
+    "data/vocab.parquet": {
+      "bytes": 255078,
+      "md5": "b8bc4d40101f49246ac0a8ac04e20e4f"
+    }
+  }
+}
