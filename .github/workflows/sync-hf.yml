@@ -1,0 +1,42 @@
+name: Sync to HuggingFace
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/build_dataset.py'
+      - 'README.md'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install pandas pyarrow huggingface_hub
+      - name: Rebuild dataset artifacts
+        run: python3 scripts/build_dataset.py
+      - name: Upload to HuggingFace
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO: ${{ vars.HF_REPO }}
+        run: |
+          python3 - <<'PY'
+          import os
+          from huggingface_hub import HfApi
+          api = HfApi(token=os.environ['HF_TOKEN'])
+          repo = os.environ.get('HF_REPO') or 'chengjian19740507-afk/waiyu-180'
+          api.create_repo(repo, repo_type='dataset', exist_ok=True)
+          paths = ['data/sentences.jsonl','data/vocab.jsonl',
+                   'data/sentences.parquet','data/vocab.parquet',
+                   'data/sentences','data/vocab',
+                   'dataset_info.json','README.md']
+          api.upload_folder(repo_id=repo, folder_path='.', repo_type='dataset',
+                            allow_patterns=paths, ignore_patterns=['.git/*','node_modules/*','*.tgz'])
+          print('synced ->', repo)
+          PY

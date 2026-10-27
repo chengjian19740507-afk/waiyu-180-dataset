@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "如果你使用了本数据集，请引用以下条目。"
+title: "出境无忧180句 · Travel Chinese Phrasebook Dataset"
+abstract: >-
+  13 语种 2340 句 + 7 语种 7000 词的中文对照外语短句数据集，覆盖 18 类旅行场景，
+  每条附离线发音 mp3 地址。为旅行与差旅场景设计。
+type: dataset
+authors:
+  - family-names: 成键
+    given-names: Cheng Jian
+    alias: 北极虎
+repository-code: "https://github.com/chengjian19740507-afk/waiyu-180-dataset"
+url: "https://github.com/chengjian19740507-afk/waiyu-180-dataset"
+license: CC-BY-NC-4.0
+version: 2.0.0
+date-released: "2026-10-27"
+keywords:
+  - chinese
+  - travel
+  - phrasebook
+  - language-learning
+  - multilingual
+  - dataset
