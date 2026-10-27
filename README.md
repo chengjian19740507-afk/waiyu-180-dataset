@@ -165,6 +165,32 @@ https://github.com/chengjian19740507-afk/waiyu-180-dataset
 
 ---
 
+## 发布到 npm / HuggingFace
+
+仓库已内置自动化，一次配置长期免维护。
+
+**一次性设置**
+
+| 平台 | 操作 |
+|---|---|
+| npm | `npm adduser` 登录（发布需 `NPM_TOKEN` secret） |
+| HuggingFace | `huggingface-cli login`；建空仓 `chengjian19740507-afk/waiyu-180`（type=dataset）；加 `HF_TOKEN` secret |
+
+**之后**
+
+```bash
+# 手动发布
+bash scripts/publish_npm.sh
+bash scripts/publish_hf.sh
+
+# 或走 CI：打 tag 自动发 npm，push 自动同步 HF
+git tag v2.0.0 && git push origin v2.0.0
+```
+
+> npm 发布需确认 registry 为 `https://registry.npmjs.org`（国内镜像不承载公共发布）。
+
+---
+
 ## License
 
 | 部分 | 许可 |
