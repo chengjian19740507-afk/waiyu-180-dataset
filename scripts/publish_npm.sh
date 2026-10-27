@@ -21,7 +21,16 @@ VER=$(node -p "require('./package.json').version")
 echo "  waiyu-180@$VER"
 
 echo "▶ 发布"
-npm publish --access public --provenance
+# 注意：国内镜像（registry.npmmirror.com）不承载公共发布，必须切回官方源
+REG=$(npm config get registry)
+if [[ "$REG" != *"registry.npmjs.org"* ]]; then
+  echo "  当前 registry=$REG → 切回官方源"
+  npm publish --registry=https://registry.npmjs.org --access public --provenance \
+    || npm publish --registry=https://registry.npmjs.org --access public
+else
+  npm publish --access public --provenance \
+    || npm publish --access public
+fi
 
 echo "✓ 已发布：https://www.npmjs.com/package/waiyu-180"
 echo
